@@ -221,6 +221,13 @@ h5 {
     }
   }  
 
+/* Responsive layout - for iPhone 8 ----*/
+
+  @media only screen
+    and (min-width: 375px)
+    and (min-height: 667px)
+    and (-webkit-min-device-pixel-ratio: 2) { }
+
 /* --------------------------------------------- */
 /* Parallax scrolling */
 .parallax-1 {
