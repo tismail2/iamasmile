@@ -1,0 +1,59 @@
+body, html {
+    height: 100%;
+}
+
+.note {
+    font-size: 36px;
+    padding: 30px 50px
+}
+
+#place-1 {
+    color: ghostwhite;
+}
+
+/* Parallax scrolling */
+.sea-parallax-1 {
+    /* The image used */
+    background-image: url(sea-sunset.jpg);
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    /* Change the background-attachment to scroll; to make the website scrolling vertically */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sea-nav-bar {
+    overflow: hidden;
+    padding-left: 3%;
+    padding-right: 3%;
+  /* To keep the nav menu fixed on top */
+  /*  position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white; */
+}
+
+/* Style the navigation links for different background*/
+.sea-nav-bar {
+    font-size: larger;
+    float: left;
+    display: block;
+/*    color: #dbc69c; */
+    color: palevioletred;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+  }
+
+/* Change color on hover */
+.sea-nav-bar a:hover {
+    /*background-color: #dbc69c;
+    color: ghostwhite; */
+    color: #333;
+
+  }

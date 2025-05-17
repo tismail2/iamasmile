@@ -1,0 +1,333 @@
+/* Styling the background image, full blown */
+/* html {
+    background: url(ismail-gateng.jpg) no-repeat center fixed;
+    background-size: cover;
+} */
+
+
+/* --------------------------------------------- */
+/* Main */
+* {
+    box-sizing: border-box;
+  }
+
+/* Below syntax will make the image streched full to right and left side */
+  
+/*  body {
+    margin: 0;
+  } */
+
+body, html {
+    height: 100%;
+}
+
+
+/* Setting the texts on each parallax picture*/
+
+.note {
+    font-size: 36px;
+    padding: 30px 50px
+}
+
+/* The color of texts on each parallax picture*/
+#place-1 {
+    color: ghostwhite;
+}
+
+h1 {
+    padding: 0px 0 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 25px;
+/*    color: #dbc69c; */
+    color: burlywood;
+
+}
+
+h5 {
+    text-align: center;
+    color: palevioletred;
+    padding-bottom: 30px;
+}
+
+/* --------------------------------------------- */
+/* Styling the mega menu with dropdown nav link */
+.navbar {
+    overflow: hidden;
+    padding-left: 3%;
+    padding-right: 3%;
+    /* font-family: Arial, Helvetica, sans-serif; */
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 20px;
+    color: burlywood;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  /* Styling hover color for drop button */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    color: #000;
+  }
+
+  .navbar-1 {
+    overflow: hidden;
+    padding-left: 3%;
+    padding-right: 3%;
+    /* font-family: Arial, Helvetica, sans-serif; */
+  }
+  
+  .navbar-1 a {
+    float: left;
+    font-size: 20px;
+    color: palevioletred;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  /* Styling hover color for drop button */
+  .navbar-1 a:hover, .dropdown:hover .dropbtn-1 {
+    color: #000;;
+  }
+
+
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+    font-size: 20px;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 20px;  
+    border: none;
+    outline: none;
+    text-align: center;
+    color: burlywood;
+    padding: 14px 16px;
+    background-color: inherit;
+    font: inherit;
+    margin: 0;
+  }
+
+  .dropdown .dropbtn-1 {
+    font-size: 20px;  
+    border: none;
+    outline: none;
+    text-align: center;
+    color: palevioletred;
+    padding: 14px 16px;
+    background-color: inherit;
+    font: inherit;
+    margin: 0;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    /*background-color: #f9f9f9;*/
+    width: 100%;
+    left: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content .header {
+    background: red;
+    padding: 16px;
+    color: white;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 100%;
+    padding: 0px;
+    padding-left: 270px;
+    /* Change color here for dropdown link */
+    background-color: white;
+    height: 60px;
+  }
+  
+  .column a {
+    float: none;
+    color: burlywood;
+    padding: 16px;
+    text-decoration: none;
+    display:inline-table;
+    text-align: left;
+  }
+  
+  .column a:hover {
+    color: #000;
+  }
+
+  /* Setting for column for parallax-5 above*/
+
+  .column-1 {
+    float: left;
+    width: 100%;
+    padding: 0px;
+    padding-left: 270px;
+    /* Change color here for dropdown link */
+    background-color: white;
+    height: 60px;
+  }
+  
+  .column-1 a {
+    float: none;
+    color: palevioletred;
+    padding: 16px;
+    text-decoration: none;
+    display:inline-table;
+    text-align: left;
+  }
+  
+  .column-1 a:hover {
+    color: #000;
+  }
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+
+  @media screen and (max-width: 600px) {
+    .column-1 {
+      width: 100%;
+      height: auto;
+    }
+  }  
+
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      height: auto;
+    }
+  }  
+
+/* --------------------------------------------- */
+/* Parallax scrolling */
+.parallax-1 {
+    /* The image used */
+    background-image: url(ismail-gateng.jpg);
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    /* Change the background-attachment to scroll; to make the website scrolling vertically */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-2 {
+    /* The image used */
+    background-image: url(png-green.jpg);
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    /* Change the background-attachment to scroll; to make the website scrolling vertically */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-3 {
+    /* The image used */
+    background-image: url(thumbnail.jpeg);
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    /* Change the background-attachment to scroll; to make the website scrolling vertically */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-4 {
+    /* The image used */
+    background-image: url(meunasah-lhee.jpg);
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    /* Change the background-attachment to scroll; to make the website scrolling vertically */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-5 {
+    /* The image used */
+    background-image: url(sae-malay-sunset.jpg);
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    /* Change the background-attachment to scroll; to make the website scrolling vertically */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-6 {
+    /* The image used */
+    background-image: url(sea-sunset.jpg);
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    /* Change the background-attachment to scroll; to make the website scrolling vertically */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* --------------------------------------------- */
+/* Styiling the list */  
+ul {
+padding-left: 3%;
+}
+
+li {
+padding-left: 2%;
+font-size: 25px;
+color: ghostwhite;
+}
+
+p {
+padding-top: 10%;
+padding-left: 12px;
+font-size: 25px;
+color: ghostwhite;
+}
